@@ -24,7 +24,7 @@ numero = int(input("Digite um número: "))
 resultado = fibonacci(numero)
 print(resultado)
 
-# Questão 13
+# Questão 3
 
 faturamento_medio = [
     5234.50, 6789.20, 0.00, 7890.45, 3456.30, 9821.10, 6234.70, 0.00, 8990.65, 4500.85,
