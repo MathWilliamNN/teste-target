@@ -26,11 +26,12 @@ print(resultado)
 
 # Questão 3
 
-faturamento_medio = [
-    5234.50, 6789.20, 0.00, 7890.45, 3456.30, 9821.10, 6234.70, 0.00, 8990.65, 4500.85,
-    6700.95, 8123.75, 2345.60, 0.00, 5432.15, 7865.25, 6345.10, 3450.90, 8921.30, 0.00,
-    7894.45, 6200.30, 9123.15, 4578.70, 5634.25, 0.00, 2340.65, 8765.40, 3123.20, 5678.50
-]
+import json
+
+with open('dados.json', 'r') as file:
+    dados = json.load(file)
+
+faturamento_medio = [item['valor'] for item in dados]
 
 def minimo(array):
     valor_min=array[0]
